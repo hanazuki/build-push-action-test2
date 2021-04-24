@@ -1,2 +1,3 @@
 FROM busybox
-RUN echo good
+RUN echo bad
+RUN false
