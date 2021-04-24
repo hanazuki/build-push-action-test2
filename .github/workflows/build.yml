@@ -4,5 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+    - run: git rev-parse HEAD
     - uses: docker/setup-buildx-action@v1
     - uses: crazy-max/docker-build-push-action@fix-ref-spec
